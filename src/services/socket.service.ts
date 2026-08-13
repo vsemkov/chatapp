@@ -10,8 +10,6 @@ export class SocketService {
 
         const url = import.meta.env.VITE_IO_URL
 
-        console.log('Подключение к Socket.IO:', url)
-
         this.socket = io(url, {
             auth: { token },
             query: { token, chatId },

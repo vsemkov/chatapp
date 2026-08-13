@@ -2,6 +2,9 @@
 
 interface ImportMetaEnv {
     readonly VITE_IO_URL: string;
+    readonly VITE_API_URL: string;
+    readonly VITE_IO_PROXY_URL: string;
+    readonly VITE_API_PROXY_URL: string;
 }
 
 interface ImportMeta {
