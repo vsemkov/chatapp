@@ -1,0 +1,20 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "types": ["vitest/globals", "node", "jsdom"],
+    "noEmit": false,
+    "emitDeclarationOnly": true
+  },
+  "include": [
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts",
+    "src/**/*.spec.tsx",
+    "src/**/*.test.tsx",
+    "src/**/*.spec.vue",
+    "src/**/*.test.vue",
+    "src/views/__tests__/**/*.ts",
+    "src/untls/__tests__/**/*.ts"
+  ],
+  "exclude": ["node_modules", "dist"]
+}
