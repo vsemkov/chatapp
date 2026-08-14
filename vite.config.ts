@@ -3,7 +3,6 @@ import vue from '@vitejs/plugin-vue';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig(({ mode }) => {
-  // Загружаем переменные окружения для текущего режима
   const env = loadEnv(mode, process.cwd(), '');
 
   return {
@@ -33,5 +32,4 @@ export default defineConfig(({ mode }) => {
       }
     }
   }
-};
 });
