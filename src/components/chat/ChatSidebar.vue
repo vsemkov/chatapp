@@ -89,7 +89,7 @@ const emit = defineEmits<{
   selectChat: [chatId: number]
 }>()
 
-const isMenuOpen = ref(false)
+const isMenuOpen = ref(true)
 
 const router = useRouter()
 const chatsStore = useChatsStore()

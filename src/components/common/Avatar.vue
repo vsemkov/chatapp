@@ -1,7 +1,7 @@
 <template>
   <div
     :class="[
-      'rounded-full bg-gray-300 flex items-center justify-center flex-shrink-0',
+      'relative rounded-full bg-gray-300 flex items-center justify-center flex-shrink-0',
       sizeClasses
     ]"
   >
@@ -15,6 +15,7 @@
       <span v-else class="font-medium text-gray-600">
         {{ initials }}
       </span>
+      <span v-if="showStatus" :class="['absolute rounded-full size-3 border border-white bottom-0 left-0', user?.status === 'online' ? 'bg-amber-400' : 'bg-gray-400']">  </span>
     </slot>
   </div>
 </template>
@@ -26,6 +27,7 @@ import type { User } from '../../types';
 const props = defineProps<{
   user?: User | null;
   size?: 'sm' | 'md' | 'lg';
+  showStatus?: boolean; 
 }>();
 
 const sizeClasses = computed(() => {

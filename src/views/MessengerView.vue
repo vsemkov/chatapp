@@ -11,7 +11,7 @@
               </h2>
             </div>
             <div class="relative flex ml-8">
-              <div v-for="participant in currentChat.participants" class="absolutre -ml-4"><Avatar :user="participant" /></div>
+              <div v-for="participant in currentChat.participants" class="absolutre -ml-4"><Avatar :showStatus="true" :user="participant" /></div>
             </div>
           </div>
           <div>
