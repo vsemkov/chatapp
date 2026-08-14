@@ -30,7 +30,7 @@ frontend/
 │   │   ├── auth.api.ts   # Аутентификация
 │   │   ├── chat.api.ts   # Управление чатами
 │   │   ├── messages.api.ts # Сообщения
-│   │   └── client.ts     # HTTP-клиент (axios)
+│   │   └── client.ts     # HTTP-клиент
 │   ├── components/       # Vue-компоненты
 │   │   ├── chat/         # Компоненты чата
 │   │   │   ├── ChatSidebar.vue
